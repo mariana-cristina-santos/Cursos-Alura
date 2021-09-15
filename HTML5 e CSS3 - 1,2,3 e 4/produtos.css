@@ -1,0 +1,42 @@
+ /*deixa o fundo do cabeçalho (header) cinza*/ 
+
+ header{
+     background-color: rgb(151, 143, 143);
+     padding: 20px 0;
+ }
+
+ .caixa{
+     width:940px;
+     position:relative;
+     margin: 0 auto;
+ }
+
+ /* position absolute tira o elemento do ponto incial*/
+ nav {
+     position: absolute;
+     top: 110px;;
+     right: 0;
+ }
+
+ /*mudando as linhas do menu de block para inline*/
+
+ nav li{
+     display: inline;
+/* aumentar o espaçamento dos itens e não o do link, margin é o espaçamento externo */
+     margin: 0 0 0 15px;
+ }
+
+ /* que todos os links da navegação fiquem com a letra maiscula */
+
+ nav a{
+     text-transform: uppercase;
+     color:rgb(12, 10, 10);
+     font-weight: bold;
+     font-size: 22px;
+     text-decoration: none;
+ }
+
+
+
+ 
+
