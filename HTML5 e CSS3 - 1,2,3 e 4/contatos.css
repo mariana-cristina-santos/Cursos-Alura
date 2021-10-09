@@ -1,0 +1,22 @@
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+/*mudar para não ocupar somente o tamanho do seu conteudo
+antes era display inline por padrao*/
+form label{
+    display:block;
+    font-size: 20px;
+    margin:0 0 10px;
+}
+
+form input{
+    display:block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width:50%; /*largura ocupando metade da pag*/
+}
