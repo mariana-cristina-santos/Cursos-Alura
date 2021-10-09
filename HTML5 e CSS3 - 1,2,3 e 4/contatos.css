@@ -8,15 +8,43 @@ form{
 }
 /*mudar para não ocupar somente o tamanho do seu conteudo
 antes era display inline por padrao*/
-form label{
+form label, form legend{
     display:block;
     font-size: 20px;
     margin:0 0 10px;
 }
+/*virgula me deixa colocar as mesma configurações para duas tags*/
 
-form input{
+.input-padrao {
     display:block;
     margin: 0 0 20px;
     padding: 10px 25px;
     width:50%; /*largura ocupando metade da pag*/
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+/*ter duas tags é como ter o dobro da força de um só
+tag tem força 1, class força 10, id força 100
+estilo inline que é aplicado no html é mais forte, teria força 1000 
+e o !important é o mais forte de todos*/
+
+.enviar{
+    padding: 15px 0;
+    width:40%;
+    color:white;
+    background: orange;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 2s all;
+    cursor:pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: rotate(5deg) scale(1.2)
 }
