@@ -101,10 +101,6 @@ footer {
 	margin: 20px 0 0;
 }
 
-main {
-	width: 940px;
-	margin: 0 auto;
-}
 
 form {
 	margin: 40px 0;
@@ -159,6 +155,9 @@ td, th {
 	border: 1px solid #000000;
 	padding: 8px 15px;
 }
+
+
+
 /* css da pagina inical*/
 .banner{
     width:100%;
@@ -170,6 +169,31 @@ td, th {
     margin: 0 0 1em; /* um espaço p baixo do tamanho da fonte*/
     clear:left; /*limpa o float*/
 
+}
+
+.titulo-principal::first-letter{
+	font-weight: bold;
+
+}
+
+.titulo-principal:before{
+	content: " ✦";
+}
+
+.titulo-principal:hover{
+	color:rgb(185, 176, 174);
+	text-decoration:underline;
+}
+
+.titulo-principal:after{
+	content: " ✦";
+}
+
+.principal{
+	padding:3em 0;
+	background:#FEFEFE;
+	width: 940px;
+	margin: 0 auto;
 }
 
 .principal p{
@@ -190,13 +214,56 @@ td, th {
     margin: 0 20px 20px 0; /*cima, direita, baixo, esquerda*/
     
 }
+.beneficios{
+	padding: 3em 0;
+	background:#888888;
+}
 
+.conteudo-beneficios{
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios{
+	width:40%;
+	display:inline-block;
+	vertical-align: top;
+}
+
+.itens{
+	line-height: 1.5;
+}
+
+.itens:hover{
+	color:thistle;
+	text-decoration: underline;
+}
+
+.itens:nth-child(2n){
+	font-weight: bold;
+
+}
+
+.itens:before{
+	content: "✧";
+	color:rgb(95, 95, 95);
+
+}
 .imagem-beneficios{
     width:60%;
 }
 
+
+
 .mapa{
     padding: 3em 0;
+	background: linear-gradient(#FEFEFE, #888888);
+
+}
+
+.mapa-conteudo{
+	width: 940px;
+	margin: 0 auto;
 }
 
 .mapa p {
@@ -206,6 +273,6 @@ td, th {
 
 .video{
     width:560px;
-    margin: 1em auto;
+    margin: 2em auto;
 
 }
