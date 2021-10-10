@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="barbearia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Yaldevi:wght@300&display=swap" rel="stylesheet">
     <title>Barbearia Alura</title>
 </head>
 <body>
-
 
     <header>
         <div class="caixa">
@@ -24,32 +27,48 @@
         </div>    
     </header>
 
-    <img id="banner" src="imagens/banner.jpg">
+    <!--classe pra estilo, id para comportamento-->
 
-    <div class="principal">
-        <h2 class="titulocentralizado">Sobre a Barbearia Alura</h2>
+    <img class="banner" src="imagens/banner.jpg">
 
-        <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e 
-        barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+    <main>
+        <section class="principal">
+            <h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
 
-        <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
+            <img class="utensilios" src="imagens/utensilios.jpg" alt="utensilios de um barbeiro">
 
-        <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e 
-        agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
-    </div>
+            <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e 
+            barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
 
-    <div class="beneficios">
-        <h3 class="titulocentralizado">Benefícios</h3>
+            <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
 
-        <ul>
-            <li class="itens">Atendimento aos clientes</li>
-            <li class="itens">Espaço diferenciado</li>
-            <li class="itens">Localização</li>
-            <li class="itens">Profissionais qualificados</li>
-        </ul>
-    <img src="imagens/beneficios.jpg" class="imagembeneficios">
+            <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e 
+            agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+        </section>
 
-    </div>
+        <section class="mapa">
+            <h3 class="titulo-principal">Nosso Estabelecimento</h3>
+            <p>Nosso estabelecimento está localizado no <strong>coração da cidade</strong></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29255.20806416265!2d-46.64741515!3d-23.571998549999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1salura%20sao%20paulo!5e0!3m2!1spt-BR!2sbr!4v1633826612148!5m2!1spt-BR!2sbr" width="1000" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </section>
+
+        <section class="beneficios">
+            <h3 class="titulo-principal">Benefícios</h3>
+
+            <ul>
+                <li class="itens">Atendimento aos clientes</li>
+                <li class="itens">Espaço diferenciado</li>
+                <li class="itens">Localização</li>
+                <li class="itens">Profissionais qualificados</li>
+            </ul>
+        <img src="imagens/beneficios.jpg" class="imagembeneficios">
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </section>
+    </main>
 
     
     <footer>
