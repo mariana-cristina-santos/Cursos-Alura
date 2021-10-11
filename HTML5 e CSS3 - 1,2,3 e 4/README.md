@@ -30,6 +30,4 @@ Já a última página de **Contato** possui:
 
 - Formulário de contato;
 - Tabela de horários de funcionamento.
-
-
 ---
