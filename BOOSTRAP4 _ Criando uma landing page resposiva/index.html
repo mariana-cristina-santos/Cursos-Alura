@@ -16,7 +16,7 @@
 <body>
 
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-to">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="#">fruta e fruto</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" 
     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +27,7 @@
         <li><a class="nav-item nav-link active" href="#">Início <span class="sr-only">(current)</span></a></li>
         <li><a class="nav-item nav-link" href="#">receitas</a></li>
         <li><a class="nav-item nav-link" href="#">quem somos</a></li>
-        <li><a class="nav-item nav-link" href="#">contato</a></li>
+        <li><a class="nav-item nav-link" data-toggle="modal" data-target="#modal-contato" href="#">contato</a></li>
       </ul>
     </div>
   </nav>
@@ -133,6 +133,39 @@
 </section>
 
 </main>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalCentralizado">Título do modal</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Endereço de email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Exemplo de textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Salvar mudanças</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <p>contato:<a href="mailto:email@frutafruto.com.br">email@frutafruto.com.br</a></p>
   <script crossorigin="anonymous" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
