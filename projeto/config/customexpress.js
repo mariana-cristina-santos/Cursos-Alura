@@ -1,13 +1,13 @@
-const express = require ("express")
-const consign = require ("consign")
+const express = require('express') 
+const consign = require('consign')
 
-module.exports = () =>{
+module.exports = () => {
+    const app = express()
 
-const app = express()
-
-consign()
-    .include("controllers")
-    .into(app)
+    consign()
+        .include('controllers')
+        .into(app)
 
     return app
+
 }
